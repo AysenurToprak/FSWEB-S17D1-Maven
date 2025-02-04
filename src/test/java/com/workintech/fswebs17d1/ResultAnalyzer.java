@@ -54,7 +54,7 @@ public class ResultAnalyzer implements TestWatcher, AfterAllCallback {
                 .filter((data) -> data.name().equals("FAILED")).collect(Collectors.toList()).size();
 
         double score = (double) success / (success + failure);
-        String userId = "179811";
+        String userId = "179811";//
 
         JSONObject json = new JSONObject();
         json.put("score", score);
